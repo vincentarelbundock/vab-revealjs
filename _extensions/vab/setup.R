@@ -13,5 +13,5 @@ tinytheme("minimal")
 
 # tables
 library(tinytable)
-options(tinytable_tt_theme = \(x) theme_tt(theme_tt(x, "default"), "revealjs", fontsize = .7))
+options(tinytable_tt_theme = \(x) theme_tt(theme_tt(x, "default"), "revealjs", fontsize = .5, fontsize_caption = .6))
 options(tinytable_html_mathjax = TRUE)
