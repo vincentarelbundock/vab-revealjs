@@ -24,6 +24,6 @@ format:
 
 ```{r}
 #| include: false
-source("_extensions/vincentarelbundock/vab-revealjs/setup.R")
+source("_extensions/vincentarelbundock/vab/setup.R")
 ```
 ````
