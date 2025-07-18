@@ -1,48 +1,29 @@
-# Quarto clean theme
+# VAB's Quarto theme for Reveal.js slides
 
-A minimalist and elegant presentation theme for Quarto Reveal.js, inspired by Kyle's
-[LaTex template](https://raw.githack.com/kylebutts/templates/master/latex-slides/slides.pdf).
+Initially copied from Grant McDermott and Kyle Butt's clean theme, published under MIT license. 
 
-Click the screenshot below to be taken to a
-[live demo](https://grantmcdermott.com/quarto-revealjs-clean-demo/template.html).
+https://github.com/grantmcdermott/quarto-revealjs-clean
 
-[![](clean-title.png "live demo")](https://grantmcdermott.com/quarto-revealjs-clean-demo/template.html)
-
-## Use
-
-Depending on your use case, here are some [Quarto CLI](https://quarto.org/)
-commands to get started.
-
-If you would like to add the **clean** theme to an existing directory:
+## Install
 
 ```bash
-quarto install extension grantmcdermott/quarto-revealjs-clean
+quarto install extension vincentarelbundock/vab-revealjs
 ```
 
-Alternatively, you can use a
-[Quarto template](https://quarto.org/docs/extensions/starter-templates.html)
-that bundles the **clean** theme plus a .qmd starter document. This is a better
-option if you are starting a new project from scratch, since it will automatically
-create a new directory with all of the necessary scaffolding in one go. We provide
-two template options.
+## Usage
 
-- Bare bones template
 
-```bash
-quarto use template grantmcdermott/quarto-revealjs-clean
+````
+---
+title: "Example"
+author: "Vincent"
+format: 
+  vab-revealjs:
+    embed-resources: true
+---
+
+```{r}
+#| include: false
+source("_extensions/vincentarelbundock/vab-revealjs/setup.R")
 ```
-
-- Full demo template
-
-```bash
-quarto use template grantmcdermott/quarto-revealjs-clean-demo
-```
-
-## PDF (Typst) version
-
-The Quarto Reveal.js backend will render HTML slides. This is great for
-interactive content and dynamic responsiveness (e.g., automatically fitting
-whatever display device is being used). However, you may prefer to render your
-slides directly to PDF instead. If so, please take a look at Kazuharu
-Yanagimoto's very nice port of the **clean** theme, which leverages the Typst
-backend: https://github.com/kazuyanagimoto/quarto-clean-typst
+````
