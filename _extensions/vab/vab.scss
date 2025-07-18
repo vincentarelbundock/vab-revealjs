@@ -30,7 +30,6 @@ $font-family-sans-serif: "Lato", sans-serif !default;
 $presentation-heading-font: "Lato", sans-serif !default;
 
 $presentation-heading-color: $jet !default;
-$presentation-heading-font-weight: lighter;
 //$presentation-heading-line-height: 2;
 //$presentation-block-margin: 28px;
 $presentation-font-size-root: 30px;
@@ -49,8 +48,6 @@ $selection-bg: #26351c !default;
 }
 
 .reveal p {
-  // font-weight: 300;
-  font-weight: lighter;
   margin-top: 1.25em;
 }
 
@@ -71,7 +68,6 @@ $selection-bg: #26351c !default;
     color: $accent;
     font-style: italic;
     margin-top: 0em;
-    font-weight: lighter;
   }
 
   .institute,
@@ -103,23 +99,17 @@ $selection-bg: #26351c !default;
 
 
 .reveal h2 {
-  // font-weight: 350;
-  font-weight: lighter;
   font-size: 1.4em;
 }
 
 .reveal h3 {
   color: $body-color;
   font-style: italic;
-  // font-weight: 350;
-  font-weight: lighter;
   font-size: 0.95em;
 }
 
 .reveal h4 {
   color: $body-color;
-  // font-weight: 350;
-  font-weight: normal;
   margin-top: 1.25em;
 }
 
@@ -145,8 +135,6 @@ $selection-bg: #26351c !default;
 // Unordered lists
 
 .reveal ul {
-  // font-weight: 300;
-  font-weight: lighter;
   padding-left: 16px;
 
   li::marker {
@@ -170,8 +158,6 @@ $selection-bg: #26351c !default;
 // Ordered lists
 
 .reveal ol {
-  // font-weight: 300;
-  font-weight: lighter;
   padding-left: 16px;
 
   li::marker {
@@ -260,30 +246,6 @@ $selection-bg: #26351c !default;
 .button::before {
   content: "▶";
   margin-right: 5px;
-}
-
-.reveal table + .caption {
-  font-size: 0.85em;
-  font-style: italic;
-  text-align: center;
-  margin-top: 0.5em;
-}
-
-// tables
-.etable {
-  width: 100%;
-  height: calc(100% - 3em); /* Adjust 3em based on the height of your header, if necessary */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.etable img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
 }
 
 // Change the relative widths of `output-location: column`. 
