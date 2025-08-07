@@ -19,4 +19,4 @@ fn <- \(x) x |>
                 fontsize = .5, fontsize_caption = .6
         )
 options(tinytable_tt_theme = fn)
-options(tinytable_html_mathjax = TRUE)
+options(tinytable_html_mathjax = FALSE) # Quarto already loads it
